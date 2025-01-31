@@ -1,0 +1,126 @@
+.contacts {
+    background-color: white;
+    padding: rem(120) rem(0);
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        &_content {
+        }
+
+        &_map {
+        }
+    }
+    &__map {
+        &_item {
+            width: rem(981);
+            height: rem(484);
+            border-radius: rem(48);
+            box-shadow: rem(0) rem(4) rem(17) rem(0) rgba(0, 0, 0, 0.25);
+        }
+    }
+    &__content {
+        &_title {
+        }
+
+        &_connect {
+        }
+
+        &_social {
+        }
+    }
+
+    &__title {
+        &_item {
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-style: italic;
+            font-size: rem(48);
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: rem(0);
+            text-align: left;
+            text-decoration-line: underline;
+        }
+    }
+
+    &__connect {
+        &_title {
+            margin-top: rem(40);
+
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-style: italic;
+            font-size: rem(20);
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: rem(0);
+            text-align: left;
+            text-decoration-line: underline;
+        }
+
+        &_list {
+            margin-top: rem(15);
+            display: flex;
+            flex-direction: column;
+            gap: rem(10);
+        }
+    }
+
+    &__list {
+        &_item {
+        }
+
+        &_link {
+            display: flex;
+            align-items: center;
+            //
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-style: italic;
+            font-size: rem(20);
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing:rem(0);
+            text-align: left;
+        }
+
+        &_img {
+            margin-right: rem(10);
+        }
+    }
+
+    &__social {
+        &_title {
+            margin-top: rem(40);
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-style: italic;
+            font-size: rem(20);
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing:rem(0);
+            text-align: left;
+            text-decoration-line: underline;
+        }
+
+        &_item {
+        }
+
+        &_icons {
+            margin-top: rem(15);
+            display: flex;
+            gap: rem(10);
+        }
+    }
+    &__icons {
+        &_item {
+        }
+
+        &_link {
+        }
+
+        &_img {
+            width: rem(40);
+        }
+    }
+}

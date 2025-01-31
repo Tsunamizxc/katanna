@@ -1,0 +1,61 @@
+<svg width="263.447754" height="207.201538" viewBox="0 0 263.448 207.202" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_23_1307_dd" x="0.000000" y="0.000122" width="178.979492" height="178.979370" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+		<filter id="filter_23_1311_dd" x="158.000244" y="60.000244" width="105.447510" height="105.447632" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+		<filter id="filter_23_1315_dd" x="126.009277" y="135.008789" width="72.192871" height="72.192749" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_23_1307_dd)">
+		<circle id="Oval 1" r="68.500000" transform="matrix(0.956591 -0.291434 0.291434 0.956591 89.4895 85.4897)" fill="#686847" fill-opacity="0.614943"/>
+		<circle id="Oval 1" r="68.500000" transform="matrix(0.956591 -0.291434 0.291434 0.956591 89.4895 85.4897)" fill="#686847" fill-opacity="0.614943"/>
+		<circle id="Oval 1" r="26.715000" transform="matrix(0.956591 -0.291434 0.291434 0.956591 124.028 107.191)" fill="#0A0A07" fill-opacity="0.954023"/>
+		<circle id="Oval 1" r="26.715000" transform="matrix(0.956591 -0.291434 0.291434 0.956591 124.028 107.191)" fill="#686847" fill-opacity="0.614943"/>
+		<circle id="Oval 1" r="48.634998" transform="matrix(0.956591 -0.291434 0.291434 0.956591 106.132 95.4575)" fill="#686847" fill-opacity="0.614943"/>
+		<circle id="Oval 1" r="48.634998" transform="matrix(0.956591 -0.291434 0.291434 0.956591 106.132 95.4575)" fill="#686847" fill-opacity="0.614943"/>
+	</g>
+	<g filter="url(#filter_23_1311_dd)">
+		<circle id="Oval 1" r="39.643402" transform="matrix(-0.264729 0.964323 -0.964323 -0.264729 210.724 108.724)" fill="#686847" fill-opacity="0.614943"/>
+		<circle id="Oval 1" r="39.643402" transform="matrix(-0.264729 0.964323 -0.964323 -0.264729 210.724 108.724)" fill="#686847" fill-opacity="0.614943"/>
+		<circle id="Oval 1" r="15.460927" transform="matrix(-0.264729 0.964323 -0.964323 -0.264729 189.428 118.911)" fill="#0A0A07" fill-opacity="0.954023"/>
+		<circle id="Oval 1" r="15.460927" transform="matrix(-0.264729 0.964323 -0.964323 -0.264729 189.428 118.911)" fill="#686847" fill-opacity="0.614943"/>
+		<circle id="Oval 1" r="28.146814" transform="matrix(-0.264729 0.964323 -0.964323 -0.264729 200.702 113.784)" fill="#686847" fill-opacity="0.614943"/>
+		<circle id="Oval 1" r="28.146814" transform="matrix(-0.264729 0.964323 -0.964323 -0.264729 200.702 113.784)" fill="#686847" fill-opacity="0.614943"/>
+	</g>
+	<g filter="url(#filter_23_1315_dd)">
+		<circle id="Oval 1" r="22.711637" transform="matrix(-0.733196 -0.680017 0.680017 -0.733196 162.106 167.105)" fill="#686847" fill-opacity="0.614943"/>
+		<circle id="Oval 1" r="22.711637" transform="matrix(-0.733196 -0.680017 0.680017 -0.733196 162.106 167.105)" fill="#686847" fill-opacity="0.614943"/>
+		<circle id="Oval 1" r="8.857539" transform="matrix(-0.733196 -0.680017 0.680017 -0.733196 162.561 153.589)" fill="#0A0A07" fill-opacity="0.954023"/>
+		<circle id="Oval 1" r="8.857539" transform="matrix(-0.733196 -0.680017 0.680017 -0.733196 162.561 153.589)" fill="#686847" fill-opacity="0.614943"/>
+		<circle id="Oval 1" r="16.125261" transform="matrix(-0.733196 -0.680017 0.680017 -0.733196 162.185 160.674)" fill="#686847" fill-opacity="0.614943"/>
+		<circle id="Oval 1" r="16.125261" transform="matrix(-0.733196 -0.680017 0.680017 -0.733196 162.185 160.674)" fill="#686847" fill-opacity="0.614943"/>
+	</g>
+</svg>

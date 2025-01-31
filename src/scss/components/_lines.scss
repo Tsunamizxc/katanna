@@ -1,0 +1,49 @@
+@keyframes anim-line1 {
+    0% {
+        transform: translateY(rem(0));
+    }
+    50% {
+        transform: translateY(rem(10));
+    }
+
+    100% {
+        transform: translateY(rem(0));
+    }
+}
+
+.lines {
+    position: relative;
+    top: rem(-200);
+}
+.line1 {
+    position: absolute;
+    top: rem(0);
+    left: rem(0);
+    animation-name: anim-line1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    img{
+        width: rem(1920);
+    }
+}
+.line2 {
+    position: absolute;
+    top: rem(10);
+    left: rem(0);
+    animation-name: anim-line1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    img{
+        width: rem(1920);
+    }
+}
+.line3 {
+    position: absolute;
+    top: rem(40);
+    animation-name: anim-line1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    img{
+        width: rem(1920);
+    }
+}

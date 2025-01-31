@@ -1,0 +1,12 @@
+// все шрифты добавляются сюда
+// mixin: font-face берёт формат woff2
+// mixin: font-face-format последним значением нужно указать формат шрифта
+
+@include font-face("Montserrat", "/Montserrat-Regular", 400, normal);
+@include font-face("Montserrat", "/Montserrat-Italic", 400, italic);
+@include font-face("Montserrat", "/Montserrat-Light", 300, normal);
+
+@include font-face("Montserrat", "/Montserrat-LightItalic", 300, italic);
+
+@include font-face("Montserrat", "/Montserrat-SemiBoldItalic", 600, italic);
+

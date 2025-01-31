@@ -1,0 +1,159 @@
+.price {
+    // .price__header
+
+    &__header {
+        margin: rem(60) rem(0) rem(60) rem(0);
+        // .price__header_title
+
+        &_title {
+        }
+    }
+    &__margin {
+        &_bottom {
+            margin-bottom: rem(-55);
+        }
+    }
+    // .price__title
+
+    &__title {
+        // .price__title_item
+
+        &_item {
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-style: italic;
+            font-size: rem(48);
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: rem(0);
+            text-align: left;
+            text-decoration-line: underline;
+        }
+    }
+
+    // .price__lines
+
+    &__lines {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .price__line
+
+    &__line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // .price__line_slider
+
+        &_slider {
+            border-radius: rem(15);
+        }
+
+        // .price__line_content
+
+        &_content {
+            display: flex;
+            flex-direction: column;
+            gap: rem(30);
+            max-width: rem(640);
+        }
+    }
+
+    // .price__slider
+
+    &__slider {
+        // .price__slider_item
+
+        &_item {
+        }
+    }
+
+    // .price__item
+
+    &__item {
+        // .price__item_img
+
+        &_img {
+            width: rem(640);
+        }
+    }
+
+    // .price__content
+
+    &__content {
+        // .price__content_title
+
+        &_title {
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-style: italic;
+            font-size: rem(36);
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: rem(0);
+            text-align: left;
+        }
+
+        &_button {
+            @include btnprice(Записаться, 234);
+        }
+        // .price__content_list
+
+        &_list {
+        }
+    }
+
+    // .price__list
+
+    &__list {
+        // .price__list_item
+
+        &_item {
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-size: rem(24);
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: rem(0);
+            text-align: left;
+            //
+            list-style-type: circle;
+            margin-left: rem(20);
+        }
+    }
+}
+
+// swiper
+.swiper.mySwiperPrice {
+    margin-left: 0;
+    margin-right: 0;
+}
+.swiper-wrapper-portfolio {
+    width: rem(640);
+    cursor: pointer;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: rem(40);
+}
+.swiper-pagination-bullet {
+    width: rem(15);
+    height: rem(15);
+}
+
+.swiper-pagination-bullet {
+    box-shadow: rem(0) rem(4) rem(4) rem(0) rgba(0, 0, 0, 0.25);
+    background: rgb(255, 255, 255);
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background: rgb(0, 0, 0);
+    box-shadow: rem(0) rem(4) rem(4) rem(0) rgba(0, 0, 0, 0.25);
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: rem(0) rem(5);
+}

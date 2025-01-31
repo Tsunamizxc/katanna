@@ -1,0 +1,106 @@
+// hello
+.hello {
+    position: relative;
+    overflow: hidden;
+    padding: rem(120) rem(0) rem(180) rem(0) ;
+    box-shadow: inset rem(0) rem(4) rem(20) rem(0) rgba(0, 0, 0, 0.25);
+    background: rgb(255, 255, 255);
+    &__row {
+        display: flex;
+        position: relative;
+        &_content {
+            max-width: rem(673);
+        }
+
+        &_image {
+        position: absolute;
+        width: rem(700);
+        right: 0;
+        img{
+           
+        }
+        }
+    }
+
+    &__content {
+        &_header {
+            margin-bottom: rem(50);
+        }
+
+        &_body {
+            display: flex;
+            flex-direction: column;
+            gap: rem(25);
+        }
+
+        &_footer {
+            margin-top: rem(40);
+        }
+    }
+
+    &__header {
+        &_title {
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-style: italic;
+            font-size: rem(36);
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: rem(0);
+            text-align: left;
+            text-decoration-line: underline;
+        }
+    }
+
+    &__body {
+        &_text {
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-size: rem(24);
+            font-weight: 300;
+            line-height: 140%;
+            letter-spacing:rem(0);
+            text-align: left;
+        }
+    }
+
+    &__footer {
+        &_btn {
+            @include btn;
+          
+        }
+    }
+
+    &__image {
+        
+   
+        &_item1 {
+            position: absolute;
+            width: rem(372);
+            top: rem(-90);
+            right: rem(-0);
+            pointer-events: none;
+        }
+        &_item2 {
+            position: absolute;
+            width: rem(360);
+            top: rem(35);
+            right: rem(330);
+            pointer-events: none;
+        }
+        &_item3 {
+            position: absolute;
+            top: rem(403);
+            right: rem(310);
+            width: rem(259);
+            pointer-events: none;
+        }
+        &_item4 {
+            position: absolute;
+            top: rem(272);
+            right: rem(0);
+            width: rem(325);
+            pointer-events: none;
+        }
+    }
+}

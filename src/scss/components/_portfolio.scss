@@ -1,0 +1,106 @@
+.portfolio {
+    margin: rem(120) rem(0);
+    // .portfolio__row
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        // .portfolio__row_slider
+
+        &_slider {
+            max-width: rem(640);
+        }
+
+        // .portfolio__row_content
+
+        &_content {
+            max-width: rem(640);
+            display: flex;
+            flex-direction: column;
+            gap: rem(40);
+        }
+    }
+
+    // .portfolio__content
+
+    &__content {
+        // .portfolio__content_title
+
+        &_title {
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-style: italic;
+            font-size: rem(48);
+            font-weight: 400;
+            line-height: 120%;
+            letter-spacing: rem(0);
+            text-align: left;
+            text-decoration-line: underline;
+        }
+
+        // .portfolio__content_text
+
+        &_text {
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-size: rem(24);
+            font-weight: 300;
+            line-height: 140%;
+            letter-spacing: rem(0);
+            text-align: left;
+        }
+
+        // .portfolio__content_btn
+
+        &_btn {
+            @include btnprice(Показать ещё, 263);
+        }
+    }
+}
+
+.portfolio-slider .swiper-slide img {
+    border-radius: rem(25);
+    display: block;
+    width: rem(640);
+    height: rem(640);
+}
+.portfolio-slider2 .swiper-slide img {
+    border-radius: rem(10);
+    display: block;
+    width: rem(198);
+    height: rem(198);
+}
+.portfolio-slider2.mySwiper {
+    height: rem(200);
+    padding: rem(10) rem(0);
+    cursor: pointer;
+}
+
+.portfolio-slider2 .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-slider2 {
+    margin-top: rem(15);
+}
+
+.portfolio-slider2 .swiper-slide {
+    opacity: 0.4;
+}
+
+.portfolio-slider2 .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.portfolio-slider .swiper-slide{
+    cursor: pointer;
+
+}
+.mySwiperPortfolio2{
+    border-radius: rem(25);
+}
+.mySwiperPortfolio{
+    border-radius: rem(10);
+}

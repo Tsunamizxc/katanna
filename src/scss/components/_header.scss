@@ -1,0 +1,121 @@
+body {
+    background-color: #e3e2e0;
+}
+
+
+.header {
+    padding:rem(25) rem(0);
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_logo {
+        }
+
+        &_content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+
+    &__logo {
+        &_link {
+        }
+
+        &_img {
+            width: rem(253);
+        }
+    }
+
+    &__content {
+        display: flex;
+
+        &_top {
+            display: flex;
+            align-items: center;
+        }
+
+        &_bottom {
+            display: flex;
+            margin-top: rem(15);
+        }
+    }
+
+    &__top {
+        &_menu {
+            margin-right: rem(35);
+        }
+
+        &_button {
+  @include btn;
+        }
+    }
+
+    &__menu {
+        width:rem(551);
+        display: flex;
+        justify-content: space-between;
+        &_item {
+        }
+
+        &_link {
+            color: rgb(40, 40, 38);
+            font-family: Montserrat;
+            font-size: rem(18);
+            font-weight: 400;
+            line-height: rem(22);
+            letter-spacing: rem(0);
+            text-align: left;
+        }
+    }
+
+    &__bottom {
+        &_phone {
+            display: flex;
+            align-items: center;
+        }
+
+        &_socialn {
+            margin-left: rem(25);
+        }
+    }
+
+    &__phone {
+        &_image {
+            width: rem(25);
+        }
+
+        &_link {
+            margin-left: rem(8);
+            color: rgb(40, 40, 38);
+            font-family: Montserrat;
+            font-style: italic;
+            font-size: rem(18);
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: rem(0);
+            text-align: left;
+        }
+    }
+
+    &__socialn {
+        &_list {
+            display: flex;
+            justify-content: space-between;
+            width: rem(93);
+        }
+
+        &_item {
+        }
+
+        &_link {
+           
+        }
+
+        &_img { 
+            width: rem(25);
+        }
+    }
+}
