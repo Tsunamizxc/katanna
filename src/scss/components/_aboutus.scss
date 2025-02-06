@@ -1,4 +1,6 @@
 .about {
+    position: relative;
+    overflow: hidden;
     padding: rem(60) rem(0);
     &__header {
         margin-bottom: rem(50);

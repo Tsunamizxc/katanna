@@ -1,6 +1,6 @@
 .price {
     // .price__header
-
+    position: relative;
     &__header {
         margin: rem(60) rem(0) rem(60) rem(0);
         // .price__header_title
@@ -66,6 +66,10 @@
         // .price__slider_item
 
         &_item {
+            position: relative;
+            &:hover .price__item_svg {
+                opacity: 0.8;
+            }
         }
     }
 
@@ -76,6 +80,15 @@
 
         &_img {
             width: rem(640);
+        }
+        &_svg {
+            position: absolute;
+            opacity: 0.3;
+            transition: 0.3s all ease;
+            top: rem(285);
+            // z-index: 20;
+            left: rem(285);
+            width: rem(70);
         }
     }
 
@@ -156,4 +169,21 @@
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: rem(0) rem(5);
+}
+// fancybox
+.fancybox__caption {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: rem(24);
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: rem(0);
+    text-align: left;
+}
+.fancybox__slide.has-image > .fancybox__content {
+    width: rem(640) !important;
+    height: rem(640) !important;
+}
+.fancybox__slide {
+    border: unset;
 }

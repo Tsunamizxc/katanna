@@ -1,5 +1,14 @@
 <footer class="footer">
+    <div class="lines-eight">
+        @include('vectorlines.html')
+    </div>
     <div class="container">
+        <div class="stars-eight">
+            @include('vectorstarswhite.html')
+        </div>
+        <div class="stars-ten">
+            @include('vectorstarswhite.html')
+        </div>
         <div class="footer__row">
             <div class="footer__row_logo">
                 <a href="" class="footer__logo_link">
@@ -51,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer__content_map">
+                <div class="footer__content_map" data-aos="fade-up" data-aos-once="true" >
                     <iframe class="footer__map_item"
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3A0caab1214663002d86ebf7d70e7b95019fcc522fd400c52f97a6471e0a15c381&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
                 </div>
@@ -59,3 +68,5 @@
         </div>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+

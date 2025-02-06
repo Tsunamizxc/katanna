@@ -1,8 +1,7 @@
-// hello
 .hello {
     position: relative;
     overflow: hidden;
-    padding: rem(120) rem(0) rem(180) rem(0) ;
+    padding: rem(120) rem(0) rem(180) rem(0);
     box-shadow: inset rem(0) rem(4) rem(20) rem(0) rgba(0, 0, 0, 0.25);
     background: rgb(255, 255, 255);
     &__row {
@@ -13,12 +12,10 @@
         }
 
         &_image {
-        position: absolute;
-        width: rem(700);
-        right: 0;
-        img{
-           
-        }
+            position: relative;
+            width: rem(700);
+            height: rem(500);
+            right: rem(0);
         }
     }
 
@@ -59,7 +56,7 @@
             font-size: rem(24);
             font-weight: 300;
             line-height: 140%;
-            letter-spacing:rem(0);
+            letter-spacing: rem(0);
             text-align: left;
         }
     }
@@ -67,40 +64,175 @@
     &__footer {
         &_btn {
             @include btn;
-          
         }
     }
 
-    &__image {
-        
-   
-        &_item1 {
-            position: absolute;
+    // .hello__item1
+
+    &__item1 {
+        position: absolute;
+        right: rem(-50);
+        top: rem(-100);
+        pointer-events: none;
+
+        // .hello__item1_row
+
+        &_row {
+            position: relative;
             width: rem(372);
-            top: rem(-90);
-            right: rem(-0);
-            pointer-events: none;
         }
-        &_item2 {
-            position: absolute;
-            width: rem(360);
-            top: rem(35);
-            right: rem(330);
-            pointer-events: none;
+
+        // .hello__item1_bg
+
+        &_bg {
+            img {
+                position: absolute;
+                width: rem(372);
+            }
         }
-        &_item3 {
-            position: absolute;
-            top: rem(403);
-            right: rem(310);
-            width: rem(259);
-            pointer-events: none;
-        }
-        &_item4 {
-            position: absolute;
-            top: rem(272);
-            right: rem(0);
-            width: rem(325);
-            pointer-events: none;
+
+        // .hello__item1_border
+
+        &_border {
+            img {
+                position: absolute;
+                width: rem(372);
+
+                animation: star1anim 300s linear infinite;
+                top: rem(0);
+                left: rem(10);
+            }
         }
     }
+
+    // .hello__item2
+
+    &__item2 {
+        position: absolute;
+        top: rem(20);
+        left: rem(20);
+        pointer-events: none;
+        // .hello__item2_row
+
+        &_row {
+            position: relative;
+            width: rem(360);
+        }
+
+        // .hello__item2_bg
+
+        &_bg {
+            img {
+                position: absolute;
+
+                width: rem(360);
+            }
+        }
+
+        // .hello__item2_border
+
+        &_border {
+            img {
+                width: rem(360);
+
+                animation: star1anim 260s linear infinite;
+                position: absolute;
+                top: rem(-10);
+                left: rem(-10);
+            }
+        }
+    }
+
+    // .hello__item3
+
+    &__item3 {
+        position: absolute;
+        pointer-events: none;
+        bottom: rem(-140);
+        left: rem(100);
+        // .hello__item3_row
+
+        &_row {
+            width: rem(260);
+            position: relative;
+        }
+
+        // .hello__item3_bg
+
+        &_bg {
+            img {
+                position: absolute;
+                bottom: rem(0);
+                width: rem(260);
+            }
+        }
+
+        // .hello__item3_border
+
+        &_border {
+            img {
+                animation: star2anim 250s linear infinite;
+
+                position: absolute;
+                width: rem(260);
+                bottom: rem(20);
+                right: rem(0);
+            }
+        }
+    }
+
+    // .hello__item4
+
+    &__item4 {
+        position: absolute;
+        pointer-events: none;
+        bottom: rem(-120);
+        right: rem(0);
+        // .hello__item4_row
+
+        &_row {
+            width: rem(372);
+        }
+
+        // .hello__item4_bg
+
+        &_bg {
+            img {
+                
+                position: absolute;
+                bottom: rem(0);
+                right: rem(0);
+                width: rem(325);
+            }
+        }
+
+        // .hello__item4_border
+
+        &_border {
+            img {
+                width: rem(325);
+                animation: star1anim 220s linear infinite;
+                position: absolute;
+                bottom: rem(20);
+                right: rem(-8);
+            }
+        }
+    }
+}
+
+@keyframes star1anim {
+    0% {  
+        transform: rotate(0deg);  
+    }  
+    100% {  
+        transform: rotate(360deg);  
+    } 
+}
+@keyframes star2anim {
+    0% {  
+        transform: rotate(0deg);  
+    }  
+    100% {  
+        transform: rotate(-360deg);  
+    } 
 }

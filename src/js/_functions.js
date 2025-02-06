@@ -12,30 +12,8 @@
 // const modal = new GraphModal();
 
 // Подключение свайпера
-import Swiper, { Navigation, Pagination, Thumbs } from 'swiper';
-Swiper.use([Navigation, Pagination, Thumbs]);
-const swiper = new Swiper(".mySwiperPortfolio", {
-    spaceBetween: 0,
-    slidesPerView: 3,
-    freeMode: true,
-    watchSlidesProgress: true,
-  });
-  const swiper2 = new Swiper(".mySwiperPortfolio2", {
-    spaceBetween: 30,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    thumbs: {
-      swiper: swiper,
-    },
-  });
-  const swiper3 = new Swiper(".mySwiperPrice", {
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    spaceBetween: 50,
-  });
+// import Swiper, { Navigation, Pagination, Thumbs } from 'swiper';
+
 
 // Подключение плавной прокрутки к якорям
 // import SmoothScroll from 'smooth-scroll';
@@ -58,3 +36,5 @@ const swiper = new Swiper(".mySwiperPortfolio", {
 // data-eng-field - английские символы
 // data-email-field - ограничение символов для почты
 // data-allowed-field - создано для каких-то резиновых ограничений, можно менять
+import AOS from 'aos';
+AOS.init();

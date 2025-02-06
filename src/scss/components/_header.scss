@@ -68,6 +68,11 @@ body {
             line-height: rem(22);
             letter-spacing: rem(0);
             text-align: left;
+            opacity: 1;
+            transition: 0.3s all ease;
+            &:hover{
+                opacity: 0.5;
+            }
         }
     }
 

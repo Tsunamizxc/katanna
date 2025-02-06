@@ -1,4 +1,6 @@
 .footer {
+    overflow: hidden;
+    position: relative;
     padding: rem(120) rem(0);
     background-color: rgb(40, 40, 38);
     &__row {

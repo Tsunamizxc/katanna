@@ -1,4 +1,5 @@
 .portfolio {
+    position: relative;
     margin: rem(120) rem(0);
     // .portfolio__row
 
@@ -58,7 +59,7 @@
     }
 }
 
-.portfolio-slider .swiper-slide img {
+.portfolio-slider .swiper-slide .price__item_img {
     border-radius: rem(25);
     display: block;
     width: rem(640);
@@ -104,3 +105,18 @@
 .mySwiperPortfolio{
     border-radius: rem(10);
 }
+.portfolio-swiper-icon{
+    position: relative;
+}
+.portfolio-swiper-icon .portfolio__item_svg{
+    position: absolute;
+    top: rem(285);
+    // z-index: 20;
+    left: rem(285);
+    width: rem(70);
+    opacity: 0.2;
+    transition: 0.3s all ease;
+}
+.portfolio-swiper-icon:hover .portfolio__item_svg {
+    opacity: 0.8;
+  }
