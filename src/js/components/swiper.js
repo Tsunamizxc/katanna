@@ -28,3 +28,6 @@ const swiper = new Swiper(".mySwiperPortfolio", {
 Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
+
+import AOS from 'aos';
+AOS.init();

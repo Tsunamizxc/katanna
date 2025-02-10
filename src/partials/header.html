@@ -1,4 +1,5 @@
-<header class="header">
+
+  <header class="header">
     <div class="container">
       <div class="header__row">
         <div class="header__row_logo">
@@ -35,7 +36,57 @@
                   </ul>
               </div>
           </div>
+          <button class="burger" data-burger>
+            <span class="burger__line"></span>
+          </button>
+    
         </div>
       </div>
     </div>
   </header>
+
+    <div class="header__burger" data-menu>
+      <nav class="burger__menu">
+        <div class="burger__menu_logo">
+          <a href="index.html" class="burger__logo_link">
+            <img src="img/logo.svg" alt="" class="burger__logo_img">
+          </a>
+        </div>
+        <ul class="burger__list">
+          
+          <li class="burger__item">
+            <a href="catalog.html" class="burger__link">Каталог</a>
+          </li>
+          <li class="burger__item">
+            <a href="#" class="burger__link">Частые вопросы</a>
+          </li>
+          <li class="burger__item">
+            <a href="#" class="burger__link">О магазине</a>
+          </li>
+          <li class="burger__item">
+            <a href="contacts.html" class="burger__link">Контакты</a>
+          </li>
+        </ul>
+        <div class="burger__menu_contacts">
+          <div class="burger__contacts_column">
+              <p class="burger__connect_title">
+                Связь со мной:
+              </p>
+              <ul class="burger__connect_list">
+                <li data-aos="fade-right" data-aos-duration="500" data-aos-once="true" class="burger__list_item"><a href="" class="burger__list_link"><img src="img/icons/phone-c.svg" alt="" class="burger__list_img">+7 (951) 419-44-50</a></li>
+                <li data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="burger__list_item"><a href="" class="burger__list_link"><img src="img/icons/email.svg" alt="" class="burger__list_img">katanna_manik</a></li>
+                <li data-aos="fade-right" data-aos-duration="1500" data-aos-once="true" class="burger__list_item"><a href="" class="burger__list_link"><img src="img/icons/location.svg" alt="" class="burger__list_img">5-я линия, 157а, Омск</a></li>
+              </ul>
+              <p class="burger__social_item">
+                Мои соц.сети:
+              </p>
+              <ul class="burger__social_icons">
+                <li class="burger__icons_item"><a href="" class="burger__icons_link"><img src="img/icons/vk.svg" alt="" class="burger__icons_img"></a></li>
+                <li class="burger__icons_item"><a href="" class="burger__icons_link"><img src="img/icons/telegram.svg" alt="" class="burger__icons_img"></a></li>
+                <li class="burger__icons_item"><a href="" class="burger__icons_link"><img src="img/icons/whatsapp.svg" alt="" class="burger__icons_img"></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="burger__overlay" data-menu-overlay></div>

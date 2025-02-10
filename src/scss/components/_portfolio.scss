@@ -42,6 +42,9 @@
         // .portfolio__content_text
 
         &_text {
+            span{
+                display: inline-block;
+            }
             color: rgb(0, 0, 0);
             font-family: Montserrat;
             font-size: rem(24);

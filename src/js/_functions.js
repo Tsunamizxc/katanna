@@ -5,7 +5,7 @@
 // import { isMobile, isTablet, isDesktop } from "./functions/check_client_width";
 
 // Реализация бургер-меню
-// import { burger } from './functions/burger';
+import { burger } from './functions/burger';
 
 // Реализация модального окна
 // import GraphModal from 'graph-modal';
@@ -36,5 +36,3 @@
 // data-eng-field - английские символы
 // data-email-field - ограничение символов для почты
 // data-allowed-field - создано для каких-то резиновых ограничений, можно менять
-import AOS from 'aos';
-AOS.init();
