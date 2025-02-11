@@ -1,12 +1,18 @@
 .portfolio {
     position: relative;
     margin: rem(120) rem(0);
+    @media (max-width: 530px) {
+        margin: rem(60) rem(0);
+    }
     // .portfolio__row
 
     &__row {
         display: flex;
         justify-content: space-between;
         // .portfolio__row_slider
+        @media (max-width: 530px) {
+            flex-direction: column;
+        }
 
         &_slider {
             max-width: rem(640);
@@ -37,12 +43,32 @@
             letter-spacing: rem(0);
             text-align: left;
             text-decoration-line: underline;
+            display: inline-block;
+            &.mobile-title {
+                display: none;
+                @media (max-width: 530px) {
+                    display: block;
+                    margin-bottom: 40px;
+                }
+            }
+
+            @media (max-width: 530px) {
+                display: none;
+            }
+            @media (max-width: 530px) {
+                font-size: rem(24);
+            }
         }
 
         // .portfolio__content_text
 
         &_text {
-            span{
+            &.mobile-none {
+                @media (max-width: 530px) {
+                    display: none;
+                }
+            }
+            span {
                 display: inline-block;
             }
             color: rgb(0, 0, 0);
@@ -52,6 +78,11 @@
             line-height: 140%;
             letter-spacing: rem(0);
             text-align: left;
+            @media (max-width: 530px) {
+                font-size: rem(12);
+                margin-top: rem(20);
+                text-align: center;
+            }
         }
 
         // .portfolio__content_btn
@@ -67,17 +98,30 @@
     display: block;
     width: rem(640);
     height: rem(640);
+    @media (max-width: 530px) {
+        width: rem(320);
+        height: rem(320);
+    }
 }
 .portfolio-slider2 .swiper-slide img {
     border-radius: rem(10);
     display: block;
     width: rem(198);
     height: rem(198);
+    @media (max-width: 530px) {
+        width: rem(90);
+        height: rem(90);
+    }
 }
 .portfolio-slider2.mySwiper {
     height: rem(200);
     padding: rem(10) rem(0);
     cursor: pointer;
+    @media (max-width: 530px) {
+        width: rem(320);
+        height: rem(90);
+        margin-left: 0;
+    }
 }
 
 .portfolio-slider2 .swiper-slide {
@@ -98,20 +142,19 @@
     opacity: 1;
 }
 
-.portfolio-slider .swiper-slide{
+.portfolio-slider .swiper-slide {
     cursor: pointer;
-
 }
-.mySwiperPortfolio2{
+.mySwiperPortfolio2 {
     border-radius: rem(25);
 }
-.mySwiperPortfolio{
+.mySwiperPortfolio {
     border-radius: rem(10);
 }
-.portfolio-swiper-icon{
+.portfolio-swiper-icon {
     position: relative;
 }
-.portfolio-swiper-icon .portfolio__item_svg{
+.portfolio-swiper-icon .portfolio__item_svg {
     position: absolute;
     top: rem(285);
     // z-index: 20;
@@ -119,7 +162,13 @@
     width: rem(70);
     opacity: 0.2;
     transition: 0.3s all ease;
+     @media (max-width: 530px) {
+      top: rem(135);
+    // z-index: 20;
+    left: rem(135);
+    width: rem(50);
+    }
 }
 .portfolio-swiper-icon:hover .portfolio__item_svg {
     opacity: 0.8;
-  }
+}

@@ -3,6 +3,9 @@
     position: relative;
     &__header {
         margin: rem(60) rem(0) rem(60) rem(0);
+        @media (max-width: 530px) {
+            margin: rem(30) rem(0) rem(30) rem(0);
+        }
         // .price__header_title
 
         &_title {
@@ -11,6 +14,9 @@
     &__margin {
         &_bottom {
             margin-bottom: rem(-55);
+            @media (max-width: 530px) {
+                margin-bottom: rem(0);
+            }
         }
     }
     // .price__title
@@ -28,6 +34,9 @@
             letter-spacing: rem(0);
             text-align: left;
             text-decoration-line: underline;
+            @media (max-width: 530px) {
+                font-size: rem(24);
+            }
         }
     }
 
@@ -36,14 +45,29 @@
     &__lines {
         display: flex;
         flex-direction: column;
+        @media (max-width: 530px) {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: rem(20);
+        }
     }
 
     // .price__line
-
+    &__line-reverse {
+        @media (max-width: 530px) {
+            flex-direction: column-reverse !important;
+        }
+    }
     &__line {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 530px) {
+            flex-direction: column;
+            justify-content: unset;
+            max-width: rem(150);
+        }
         // .price__line_slider
 
         &_slider {
@@ -57,6 +81,13 @@
             flex-direction: column;
             gap: rem(30);
             max-width: rem(640);
+            @media (max-width: 530px) {
+                max-width: rem(150);
+                // height: rem(300);
+                gap: rem(15);
+
+                justify-content: space-between;
+            }
         }
     }
 
@@ -80,6 +111,9 @@
 
         &_img {
             width: rem(640);
+            @media (max-width: 530px) {
+                width: rem(150);
+            }
         }
         &_svg {
             position: absolute;
@@ -89,9 +123,19 @@
             // z-index: 20;
             left: rem(285);
             width: rem(70);
+            @media (max-width: 530px) {
+                top: rem(60);
+                // z-index: 20;
+                left: rem(60);
+                width: rem(30);
+            }
         }
     }
-
+    &__btn {
+        &_item {
+            @include btnprice(Записаться, 234);
+        }
+    }
     // .price__content
 
     &__content {
@@ -106,11 +150,12 @@
             line-height: 140%;
             letter-spacing: rem(0);
             text-align: left;
+            @media (max-width: 530px) {
+                font-size: rem(14);
+                margin-top: rem(10);
+            }
         }
 
-        &_button {
-            @include btnprice(Записаться, 234);
-        }
         // .price__content_list
 
         &_list {
@@ -133,6 +178,9 @@
             //
             list-style-type: circle;
             margin-left: rem(20);
+            @media (max-width: 530px) {
+                font-size: rem(12);
+            }
         }
     }
 }
@@ -143,6 +191,9 @@
     margin-right: 0;
 }
 .swiper-wrapper-portfolio {
+    @media (max-width: 530px) {
+        max-width: rem(150);
+    }
     width: rem(640);
     cursor: pointer;
 }
@@ -151,10 +202,17 @@
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
     bottom: rem(40);
+    @media (max-width: 530px) {
+        bottom: rem(10);
+    }
 }
 .swiper-pagination-bullet {
     width: rem(15);
     height: rem(15);
+    @media (max-width: 530px) {
+        width: rem(8);
+        height: rem(8);
+    }
 }
 
 .swiper-pagination-bullet {
@@ -169,6 +227,9 @@
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: rem(0) rem(5);
+    @media (max-width: 530px) {
+        margin: rem(0) rem(3);
+    }
 }
 // fancybox
 .fancybox__caption {
@@ -178,7 +239,10 @@
     font-weight: 400;
     line-height: 140%;
     letter-spacing: rem(0);
-    text-align: left;
+    text-align: center;
+    @media (max-width: 530px) {
+       font-size: rem(14);
+    }
 }
 .fancybox__slide.has-image > .fancybox__content {
     width: rem(640) !important;
@@ -186,4 +250,14 @@
 }
 .fancybox__slide {
     border: unset;
+}
+
+.mt30 {
+    margin-top: rem(30);
+}
+.mmt30 {
+    margin-top: rem(-40);
+}
+.mt10 {
+    margin-top: rem(10);
 }

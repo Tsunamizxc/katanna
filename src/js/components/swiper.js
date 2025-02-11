@@ -31,3 +31,9 @@ Fancybox.bind("[data-fancybox]", {
 
 import AOS from 'aos';
 AOS.init();
+AOS.init({
+  disable: function() {
+    var maxWidth = 530;
+    return window.innerWidth < maxWidth;
+  }
+});

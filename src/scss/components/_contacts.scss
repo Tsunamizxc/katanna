@@ -1,9 +1,15 @@
 .contacts {
     background-color: white;
     padding: rem(120) rem(0);
+    @media (max-width: 530px) {
+        padding: rem(60) rem(0);
+    }
     &__row {
         display: flex;
         justify-content: space-between;
+        @media (max-width: 530px) {
+            flex-direction: column;
+        }
         &_content {
         }
 
@@ -16,6 +22,10 @@
             height: rem(484);
             border-radius: rem(48);
             box-shadow: rem(0) rem(4) rem(17) rem(0) rgba(0, 0, 0, 0.25);
+            @media (max-width: 530px) {
+                width: rem(320);
+                height: rem(284);
+            }
         }
     }
     &__content {
@@ -26,6 +36,13 @@
         }
 
         &_social {
+        }
+        &_wrapper {
+            @media (max-width: 530px) {
+                display: flex;
+                gap: rem(20);
+                margin-bottom: rem(20);
+            }
         }
     }
 
@@ -40,6 +57,9 @@
             letter-spacing: rem(0);
             text-align: left;
             text-decoration-line: underline;
+            @media (max-width: 530px) {
+                font-size: rem(24);
+            }
         }
     }
 
@@ -56,6 +76,10 @@
             letter-spacing: rem(0);
             text-align: left;
             text-decoration-line: underline;
+            @media (max-width: 530px) {
+                font-size: rem(14);
+                margin-top: rem(20);
+            }
         }
 
         &_list {
@@ -80,12 +104,19 @@
             font-size: rem(20);
             font-weight: 400;
             line-height: 140%;
-            letter-spacing:rem(0);
+            letter-spacing: rem(0);
             text-align: left;
+            @media (max-width: 530px) {
+                font-size: rem(12);
+            }
         }
 
         &_img {
             margin-right: rem(10);
+            @media (max-width: 530px) {
+                width: rem(20);
+                margin-right: rem(5);
+            }
         }
     }
 
@@ -98,9 +129,13 @@
             font-size: rem(20);
             font-weight: 400;
             line-height: 140%;
-            letter-spacing:rem(0);
+            letter-spacing: rem(0);
             text-align: left;
             text-decoration-line: underline;
+            @media (max-width: 530px) {
+                font-size: rem(14);
+                margin-top: rem(20);
+            }
         }
 
         &_item {
@@ -110,6 +145,10 @@
             margin-top: rem(15);
             display: flex;
             gap: rem(10);
+            @media (max-width: 530px) {
+                margin-top: rem(10);
+                gap: rem(5);
+            }
         }
     }
     &__icons {
@@ -121,6 +160,9 @@
 
         &_img {
             width: rem(40);
+            @media (max-width: 530px) {
+                width: rem(20);
+            }
         }
     }
 }

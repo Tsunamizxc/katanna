@@ -9,10 +9,11 @@
     background: rgb(255, 255, 255);
     &__row {
         display: flex;
+        position: relative;
         @media (max-width: 530px) {
             flex-direction: column;
         }
-        position: relative;
+        
         &_content {
             max-width: rem(673);
             @media (max-width: 530px) {

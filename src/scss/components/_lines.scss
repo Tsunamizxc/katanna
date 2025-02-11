@@ -13,15 +13,22 @@
 
 .lines {
     position: relative;
-    
+
     top: rem(-200);
+    @media (max-width: 530px) {
+        top: rem(200);
+    }
 }
 .lines-two .lines {
     position: relative;
     transform: rotate(0.61turn);
     // transform: scale(1);
-    left: rem(-280);
+    left: rem(-260);
     top: rem(1300);
+    @media (max-width: 530px) {
+        top: rem(200);
+        left: rem(-200);
+    }
     pointer-events: none;
 }
 .lines-three .lines {
@@ -32,6 +39,10 @@
     left: rem(0);
     top: rem(900);
     pointer-events: none;
+    @media (max-width: 530px) {
+        top: rem(280);
+        left: rem(-0);
+    }
 }
 .lines-four .lines {
     position: relative;
@@ -39,6 +50,10 @@
     // transform: scale(1);
     left: rem(-300);
     top: rem(1700);
+    @media (max-width: 530px) {
+        top: rem(440);
+        left: rem(-60);
+    }
     pointer-events: none;
 }
 .lines-five .lines {
@@ -48,24 +63,34 @@
     left: rem(-10);
     top: rem(2700);
     pointer-events: none;
+    @media (max-width: 530px) {
+        top: rem(640);
+        left: rem(0);
+    }
 }
 .lines-six .lines {
     position: relative;
     transform: rotate(215deg);
-    
+
     top: rem(700);
     left: rem(-250);
+    @media (max-width: 530px) {
+        top: rem(650);
+        left: rem(-60);
+    }
     pointer-events: none;
-    
 }
-.lines-eight{
+.lines-eight {
     position: relative;
     transform: rotate(215deg);
-    
+
     top: rem(500);
     left: rem(-100);
     pointer-events: none;
-
+    @media (max-width: 530px) {
+        top: rem(500);
+        left: rem(-175);
+    }
 }
 .line1 {
     position: absolute;
@@ -74,7 +99,8 @@
     animation-name: anim-line1;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    img{
+
+    img {
         width: rem(1920);
     }
 }
@@ -85,7 +111,7 @@
     animation-name: anim-line1;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    img{
+    img {
         width: rem(1920);
     }
 }
@@ -95,7 +121,7 @@
     animation-name: anim-line1;
     animation-duration: 7s;
     animation-iteration-count: infinite;
-    img{
+    img {
         width: rem(1920);
     }
 }
