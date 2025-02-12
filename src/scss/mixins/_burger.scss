@@ -1,15 +1,15 @@
 /* stylelint-disable */
 
 @mixin burger {
-  --burger-width: 30px;
-  --burger-height: 30px;
+  --burger-width: 20px;
+  --burger-height: 20px;
   --burger-line-height: 4px;
 
   position: relative;
   border: none;
   padding: 0;
-  width: var(--burger-width);
-  height: var(--burger-height);
+  width: rem(30);
+  height: rem(30);
   color: #000;
   background-color: transparent;
   cursor: pointer;
@@ -18,9 +18,9 @@
   &::after {
     content: "";
     position: absolute;
-    left: 0;
+    right: 0;
     width: 100%;
-    height: var(--burger-line-height);
+    height: rem(4);
     background-color: currentColor;
     transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
   }
@@ -30,7 +30,7 @@
   }
 
   &::after {
-    top: calc(100% - var(--burger-line-height));
+    top: calc(100% - rem(4));
   }
 
   &__line {
@@ -38,7 +38,7 @@
     left: 0;
     top: 50%;
     width: 100%;
-    height: var(--burger-line-height);
+    height: rem(4);
     background-color: currentColor;
     transform: translateY(-50%);
     transition: transform 0.3s ease-in-out;

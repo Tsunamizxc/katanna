@@ -1,12 +1,12 @@
 .about {
     position: relative;
     overflow: hidden;
-     padding: rem(60) rem(0);
+    padding: rem(60) rem(0);
     @media (max-width: 530px) {
         overflow: visible;
-         padding: rem(60) rem(0) rem(30) rem(0);
+        padding: rem(60) rem(0) rem(0) rem(0);
     }
-   
+
     &__header {
         margin-bottom: rem(50);
         display: flex;

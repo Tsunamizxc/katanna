@@ -15,20 +15,38 @@
                     <img src="img/logo-white.svg" alt="" class="footer__logo_img">
                 </a>
             </div>
+           <div class="footer__row_wrapper">
             <div class="footer__row_menu">
                 <ul class="footer__menu">
-                    <li class="footer__menu_item"><a href="" class="footer__menu_link">Обо мне</a></li>
-                    <li class="footer__menu_item"><a href="" class="footer__menu_link">Услуги</a></li>
-                    <li class="footer__menu_item"><a href="" class="footer__menu_link">Портфолио</a></li>
-                    <li class="footer__menu_item"><a href="" class="footer__menu_link">Галерея</a></li>
-                    <li class="footer__menu_item"><a href="" class="footer__menu_link">Контакты</a></li>
+                    <li class="footer__menu_item"><a href="#aboutus" class="footer__menu_link">Обо мне</a></li>
+                    <li class="footer__menu_item"><a href="#price" class="footer__menu_link">Услуги</a></li>
+                    <li class="footer__menu_item"><a href="#portfolio" class="footer__menu_link">Портфолио</a></li>
+                    <!-- <li class="footer__menu_item"><a href="" class="footer__menu_link">Галерея</a></li> -->
+                    <li class="footer__menu_item"><a href="#contacts" class="footer__menu_link">Контакты</a></li>
                 </ul>
             </div>
             <div class="footer__row_btn">
-                <a href="" class="footer__btn_item">
+                <a data-fancybox href="#hidden" class="footer__btn_item">
                     Запись онлайн
                 </a>
+                
+                <div class="footer__connect_list mobile-none">
+                    <div class="footer__connect_title ">
+                        <p class="footer__title_item">
+                            Связь со мной:
+                        </p>
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list_item"><a href="" class="footer__list_link"><img src="img/icons/phone-w.svg" alt=""
+                                    class="footer__list_img">+7 (951) 419-44-50</a></li>
+                        <li class="footer__list_item"><a href="" class="footer__list_link"><img src="img/icons/email-w.svg" alt=""
+                                    class="footer__list_img">katanna_manik</a></li>
+                        <li class="footer__list_item"><a href="" class="footer__list_link"><img src="img/icons/location-w.svg" alt=""
+                                    class="footer__list_img">5-я линия, 157а, Омск</a></li>
+                    </ul>
+                </div>
             </div>
+           </div>
         </div>
         <div class="footer__contacts">
             <div class="footer__contacts_content">
@@ -77,5 +95,35 @@
         </div>
     </div>
 </footer>
+
+<div style="display: none;" id="hidden">
+    <form action="">
+        @include('form.html');
+    </form>
+</div>
+<div style="display: none;" id="price1">
+    <form action="">
+        <input type="hidden" value="Наращивание ногтей длина 1-2">
+        @include('form.html');
+    </form>
+</div>
+<div style="display: none;" id="price2">
+    <form action="">
+        <input type="hidden" value="Наращивание ногтей длина 3-7">
+        @include('form.html');
+    </form>
+</div>
+<div style="display: none;" id="price3">
+    <form action="">
+        <input type="hidden" value="Дизайн ногтей">
+        @include('form.html');
+    </form>
+</div>
+<div style="display: none;" id="price4">
+    <form action="">
+        <input type="hidden" value="Маникюр с однотонным покрытием">
+        @include('form.html');
+    </form>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 

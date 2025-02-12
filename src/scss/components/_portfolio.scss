@@ -48,7 +48,7 @@
                 display: none;
                 @media (max-width: 530px) {
                     display: block;
-                    margin-bottom: 40px;
+                    margin-bottom: rem(40);
                 }
             }
 

@@ -1,0 +1,40 @@
+<div class="modal">
+        <div class="lines-eleven">
+            @include('vectorlines.html')
+        </div>
+        <div class="stars-eleven">
+            @include('vectorstars.html')
+        </div>
+    <div class="modal-container">
+        <div class="modal__row">
+            <div class="modal__row_header">
+                <div class="modal__header_logo">
+                    <img src="img/logo.svg" alt="" class="modal__logo_img">
+                </div>
+                <div class="modal__header_title">
+                    <h3 class="modal__title_item">
+                        Записаться онлайн
+                    </h3>
+                </div>
+            </div>
+            <div class="modal__row_form">
+                <div class="modal__form_item">
+                    <label class="modal__item_label" for="">Ваше имя:</label>
+                    <input type="text" class="modal__item_input" placeholder="Введите имя">
+                </div>
+                <div class="modal__form_item">
+                    <label class="modal__item_label" for="">Телефон</label>
+                    <input type="text" class="modal__item_input" placeholder="+7 (">
+                </div>
+                <div class="modal__form_btn">
+                    <button type="submit" class="modal__btn_item">
+                        Отправить
+                    </button>
+                    <p class="modal__btn_text">
+                        Мы свяжемся с вами в течение рабочего дня
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

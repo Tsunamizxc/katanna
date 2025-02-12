@@ -16,7 +16,7 @@
 
     top: rem(-200);
     @media (max-width: 530px) {
-        top: rem(200);
+        top: rem(100);
     }
 }
 .lines-two .lines {
@@ -26,7 +26,7 @@
     left: rem(-260);
     top: rem(1300);
     @media (max-width: 530px) {
-        top: rem(200);
+        top: rem(350);
         left: rem(-200);
     }
     pointer-events: none;
@@ -40,7 +40,7 @@
     top: rem(900);
     pointer-events: none;
     @media (max-width: 530px) {
-        top: rem(280);
+        top: rem(380);
         left: rem(-0);
     }
 }
@@ -51,7 +51,7 @@
     left: rem(-300);
     top: rem(1700);
     @media (max-width: 530px) {
-        top: rem(440);
+        top: rem(650);
         left: rem(-60);
     }
     pointer-events: none;
@@ -64,7 +64,7 @@
     top: rem(2700);
     pointer-events: none;
     @media (max-width: 530px) {
-        top: rem(640);
+        top: rem(1000);
         left: rem(0);
     }
 }
@@ -75,8 +75,9 @@
     top: rem(700);
     left: rem(-250);
     @media (max-width: 530px) {
-        top: rem(650);
+        top: rem(600);
         left: rem(-60);
+        transform: rotate(245deg);
     }
     pointer-events: none;
 }
@@ -88,9 +89,24 @@
     left: rem(-100);
     pointer-events: none;
     @media (max-width: 530px) {
-        top: rem(500);
+        transform: rotate(255deg);
+
+        top: rem(650);
         left: rem(-175);
     }
+}
+.lines-eleven .lines {
+    position: relative;
+    transform: rotate(0.61turn);
+    // transform: scale(1);
+    left: rem(-130);
+    top: rem(500);
+    z-index: -1;
+    @media (max-width: 530px) {
+        top: rem(300);
+        left: rem(-200);
+    }
+    pointer-events: none;
 }
 .line1 {
     position: absolute;
@@ -102,6 +118,9 @@
 
     img {
         width: rem(1920);
+        @media (max-width: 530px) {
+            transform: scale(3);
+        }
     }
 }
 .line2 {
@@ -113,6 +132,9 @@
     animation-iteration-count: infinite;
     img {
         width: rem(1920);
+        @media (max-width: 530px) {
+            transform: scale(3);
+        }
     }
 }
 .line3 {
@@ -123,5 +145,9 @@
     animation-iteration-count: infinite;
     img {
         width: rem(1920);
+
+        @media (max-width: 530px) {
+            transform: scale(3);
+        }
     }
 }

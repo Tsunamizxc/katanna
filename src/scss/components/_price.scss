@@ -4,7 +4,7 @@
     &__header {
         margin: rem(60) rem(0) rem(60) rem(0);
         @media (max-width: 530px) {
-            margin: rem(30) rem(0) rem(30) rem(0);
+            margin: rem(60) rem(0) rem(30) rem(0);
         }
         // .price__header_title
 
@@ -111,8 +111,9 @@
 
         &_img {
             width: rem(640);
+            height: rem(640);
             @media (max-width: 530px) {
-                width: rem(150);
+                width: rem(150); height: rem(150);
             }
         }
         &_svg {
@@ -180,6 +181,8 @@
             margin-left: rem(20);
             @media (max-width: 530px) {
                 font-size: rem(12);
+            margin-left: rem(15);
+
             }
         }
     }
@@ -247,6 +250,10 @@
 .fancybox__slide.has-image > .fancybox__content {
     width: rem(640) !important;
     height: rem(640) !important;
+     @media (max-width: 530px) {
+       width: rem(320) !important;
+    height: rem(320) !important;
+    }
 }
 .fancybox__slide {
     border: unset;
