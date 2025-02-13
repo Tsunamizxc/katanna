@@ -53,14 +53,16 @@ img {
   max-width: rem(1360);
   margin: 0 auto;
   height: 100%;
+   @media (max-width: 1024px) {
+           max-width: rem(530);
+
+  }
   @media (max-width: 530px) {
           
          max-width: rem(320);
 
   }
-  @media (max-width: 1024px) {
-    // padding: 0 rem(16);
-  }
+ 
 }
 
 .site-container {

@@ -2,6 +2,7 @@
     position: relative;
     overflow: hidden;
     padding: rem(60) rem(0);
+    z-index: 1;
     @media (max-width: 530px) {
         overflow: visible;
         padding: rem(60) rem(0) rem(0) rem(0);
@@ -12,6 +13,9 @@
         display: flex;
         flex-direction: column;
         gap: rem(30);
+        @media (max-width: 1024px) {
+            margin-bottom: rem(20);
+        }
         @media (max-width: 530px) {
             gap: rem(15);
             margin-bottom: rem(10);
@@ -60,6 +64,11 @@
             line-height: rem(29);
             letter-spacing: rem(0);
             text-align: left;
+            @media (max-width: 1024px) {
+                font-size: rem(14);
+                font-weight: 300;
+                line-height: 140%;
+            }
             @media (max-width: 530px) {
                 font-size: rem(12);
                 font-weight: 300;
@@ -94,12 +103,27 @@
             left: rem(480);
             pointer-events: none;
             display: block;
+             @media (max-width: 1024px) {
+                 top: rem(210);
+            left: rem(190);
+            width: rem(105);
+
+            }
             @media (max-width: 530px) {
                 display: none;
             }
         }
         &_elements-mobile1 {
             display: none;
+            @media (max-width: 1024px) {
+            width: rem(65);
+                display: block;
+                position: absolute;
+                 top: rem(-20);
+            left: rem(110);
+            // width: rem(105);
+
+            }
             @media (max-width: 530px) {
                 position: absolute;
                 display: block;
@@ -123,6 +147,7 @@
         }
         &_elements-mobile3 {
             display: none;
+        
             @media (max-width: 530px) {
                 position: absolute;
                 display: block;
@@ -169,6 +194,9 @@
             line-height: 140%;
             letter-spacing: rem(0);
             text-align: left;
+            @media (max-width: 1024px) {
+                font-size: rem(14);
+            }
             @media (max-width: 530px) {
                 margin-top: rem(-15);
                 font-size: rem(12);
@@ -177,6 +205,9 @@
 
         &_list {
             margin-top: rem(50);
+            @media (max-width: 1024px) {
+                margin-top: rem(20);
+            }
             @media (max-width: 530px) {
                 margin-top: rem(10);
                 display: flex;
@@ -197,6 +228,9 @@
             line-height: 140%;
             letter-spacing: rem(0);
             text-align: left;
+            @media (max-width: 1024px) {
+                font-size: rem(14);
+            }
             @media (max-width: 530px) {
                 font-size: rem(10);
                 margin-left: rem(15);
@@ -222,6 +256,14 @@
             display: flex;
             flex-direction: column;
             gap: rem(20);
+            @media (max-width: 1024px) {
+                          margin-top: rem(15);
+
+            }
+            @media (max-width: 530px) {
+                margin-top: rem(20);
+                gap: rem(10);
+            }
             @media (max-width: 530px) {
                 margin-top: rem(5);
                 width: rem(150);
@@ -240,6 +282,16 @@
             line-height: 140%;
             letter-spacing: rem(0);
             text-align: left;
+            @media (max-width: 1024px) {
+                margin: rem(20) rem(0);
+
+                font-size: rem(16);
+            }
+            @media (max-width: 530px) {
+                margin: rem(20) rem(0);
+
+                font-size: rem(16);
+            }
             @media (max-width: 530px) {
                 margin: rem(-20) rem(0) rem(0) rem(0);
 
@@ -260,6 +312,9 @@
         &_img {
             width: rem(709);
             pointer-events: none;
+            @media (max-width: 1024px) {
+                width: rem(255);
+            }
             @media (max-width: 530px) {
                 width: rem(208);
             }
@@ -273,6 +328,15 @@
             line-height: 140%;
             letter-spacing: rem(0);
             text-align: left;
+            @media (max-width: 1024px) {
+                color: rgb(0, 0, 0);
+                font-family: Montserrat;
+                font-size: rem(14);
+                font-weight: 300;
+                line-height: 140%;
+                letter-spacing: rem(0);
+                text-align: left;
+            }
             @media (max-width: 530px) {
                 color: rgb(0, 0, 0);
                 font-family: Montserrat;
@@ -286,6 +350,13 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .mobile-text {
+           margin-top: rem(0);
+        width: rem(521);
+        margin-left: rem(-270);
+    }
+}
 @media (max-width: 530px) {
     .mobile-text {
         margin-top: rem(5);
@@ -293,3 +364,4 @@
         margin-left: rem(-170);
     }
 }
+

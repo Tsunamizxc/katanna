@@ -21,9 +21,15 @@
     color: rgb(104, 103, 72);
     background-color: rgb(255, 255, 255);
   }
+  @media (max-width: 1024px) {
+    font-size: rem(16);
+    line-height: rem(18);
+    padding: rem(12) rem(10);
+    text-align: center;
+  }
   @media (max-width: 530px) {
     font-size: rem(14);
-  line-height: rem(18);
+    line-height: rem(18);
     padding: rem(12) rem(14);
     text-align: center;
   }
@@ -38,10 +44,15 @@
   box-shadow: rem(0) rem(4) rem(4) rem(0) rgba(0, 0, 0, 0.25);
   background: rgb(255, 255, 255);
   transition: 0.3s all;
+   @media (max-width: 1024px) {
+    max-width: rem(138);
+    height: rem(48);
+    border-radius: rem(8);
+  }
   @media (max-width: 530px) {
     max-width: rem(114);
     height: rem(35);
-     border-radius: rem(8);
+    border-radius: rem(8);
   }
   &::before {
     content: "#{$name}";
@@ -64,12 +75,20 @@
     padding: rem(12) rem(35);
     border-radius: rem(10);
     background: rgb(104, 103, 72);
+@media (max-width: 1024px) {
+      padding: rem(8) rem(15);
+      top: rem(5);
+      left: rem(5);
+      border-radius: rem(5);
+
+      font-size: rem(16);
+    }
     @media (max-width: 530px) {
       padding: rem(4) rem(15);
-    top: rem(5);
-    left: rem(5);
-    border-radius: rem(5);
-      
+      top: rem(5);
+      left: rem(5);
+      border-radius: rem(5);
+
       font-size: rem(12);
     }
   }

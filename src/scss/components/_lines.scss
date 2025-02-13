@@ -15,6 +15,9 @@
     position: relative;
 
     top: rem(-200);
+    @media (max-width: 1024px) {
+        top: rem(100);
+    }
     @media (max-width: 530px) {
         top: rem(100);
     }
@@ -25,6 +28,10 @@
     // transform: scale(1);
     left: rem(-260);
     top: rem(1300);
+    @media (max-width: 1024px) {
+        top: rem(350);
+        left: rem(-130);
+    }
     @media (max-width: 530px) {
         top: rem(350);
         left: rem(-200);
@@ -39,6 +46,10 @@
     left: rem(0);
     top: rem(900);
     pointer-events: none;
+    @media (max-width: 1024px) {
+        top: rem(0);
+        left: rem(-0);
+    }
     @media (max-width: 530px) {
         top: rem(380);
         left: rem(-0);
@@ -50,6 +61,10 @@
     // transform: scale(1);
     left: rem(-300);
     top: rem(1700);
+    @media (max-width: 1024px) {
+        top: rem(500);
+        left: rem(-100);
+    }
     @media (max-width: 530px) {
         top: rem(650);
         left: rem(-60);
@@ -63,6 +78,10 @@
     left: rem(-10);
     top: rem(2700);
     pointer-events: none;
+    @media (max-width: 1024px) {
+        top: rem(1000);
+        left: rem(0);
+    }
     @media (max-width: 530px) {
         top: rem(1000);
         left: rem(0);
@@ -74,6 +93,11 @@
 
     top: rem(700);
     left: rem(-250);
+    @media (max-width: 1024px) {
+        top: rem(500);
+        left: rem(-130);
+        transform: rotate(245deg);
+    }
     @media (max-width: 530px) {
         top: rem(600);
         left: rem(-60);
@@ -88,6 +112,12 @@
     top: rem(500);
     left: rem(-100);
     pointer-events: none;
+    @media (max-width: 1024px) {
+        transform: rotate(215deg);
+
+        top: rem(450);
+        left: rem(-475);
+    }
     @media (max-width: 530px) {
         transform: rotate(255deg);
 
@@ -102,6 +132,10 @@
     left: rem(-130);
     top: rem(500);
     z-index: -1;
+    @media (max-width: 1024px) {
+        top: rem(550);
+        left: rem(-200);
+    }
     @media (max-width: 530px) {
         top: rem(300);
         left: rem(-200);
@@ -118,6 +152,9 @@
 
     img {
         width: rem(1920);
+        @media (max-width: 1024px) {
+            transform: scale(3);
+        }
         @media (max-width: 530px) {
             transform: scale(3);
         }
@@ -132,6 +169,9 @@
     animation-iteration-count: infinite;
     img {
         width: rem(1920);
+        @media (max-width: 1024px) {
+            transform: scale(3);
+        }
         @media (max-width: 530px) {
             transform: scale(3);
         }
@@ -145,7 +185,9 @@
     animation-iteration-count: infinite;
     img {
         width: rem(1920);
-
+        @media (max-width: 1024px) {
+            transform: scale(3);
+        }
         @media (max-width: 530px) {
             transform: scale(3);
         }

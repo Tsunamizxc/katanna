@@ -7,6 +7,10 @@
         top: rem(30);
         left: rem(140);
         // .stars__row
+        @media (max-width: 1024px) {
+            top: rem(30);
+            left: rem(510);
+        }
         @media (max-width: 530px) {
             top: rem(30);
             left: rem(310);
@@ -86,6 +90,11 @@
         top: rem(10);
         left: rem(60);
         // .stars__row
+
+        @media (max-width: 1024px) {
+            top: rem(10);
+            left: rem(10);
+        }
         @media (max-width: 530px) {
             top: rem(10);
             left: rem(10);
@@ -234,6 +243,11 @@
         bottom: rem(30);
         right: rem(250);
         // .stars__row
+        @media (max-width: 1024px) {
+            bottom: rem(0);
+            right: rem(10);
+            z-index: -1;
+        }
         @media (max-width: 530px) {
             bottom: rem(-100);
             right: rem(10);
