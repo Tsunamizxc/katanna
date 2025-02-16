@@ -1,4 +1,6 @@
 <?php
+
+header('Content-Type: application/json');  
 // Файлы phpmailer
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
@@ -9,9 +11,10 @@ $file = $_FILES['file'];
 
 $c = true;
 // Формирование самого письма
-$title = "Заголовок письма";
+$title = "Заявка на запись";
+
 foreach ( $_POST as $key => $value ) {
-  if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
+  if ( $value != "" ) {
     $body .= "
     " . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
       <td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
@@ -32,31 +35,37 @@ try {
   $mail->SMTPAuth   = true;
 
   // Настройки вашей почты
-  $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = ''; // Логин на почте
-  $mail->Password   = ''; // Пароль на почте
+  $mail->Host       = 'smtp.timeweb.ru'; // SMTP сервера вашей почты
+  $mail->Username   = 'info@katanna-nails.ru'; // Логин на почте
+  $mail->Password   = '1F970r4Yl'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('info@katanna-nails.ru', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('');
+  $mail->addAddress('info@katanna-nails.ru');
 
   // Прикрипление файлов к письму
-  if (!empty($file['name'][0])) {
-    for ($ct = 0; $ct < count($file['tmp_name']); $ct++) {
-      $uploadfile = tempnam(sys_get_temp_dir(), sha1($file['name'][$ct]));
-      $filename = $file['name'][$ct];
-      if (move_uploaded_file($file['tmp_name'][$ct], $uploadfile)) {
-          $mail->addAttachment($uploadfile, $filename);
-          $rfile[] = "Файл $filename прикреплён";
-      } else {
-          $rfile[] = "Не удалось прикрепить файл $filename";
-      }
-    }
-  }
-
+  // if (!empty($file['name'][0])) {
+  //   for ($ct = 0; $ct < count($file['tmp_name']); $ct++) {
+  //     $uploadfile = tempnam(sys_get_temp_dir(), sha1($file['name'][$ct]));
+  //     $filename = $file['name'][$ct];
+  //     if (move_uploaded_file($file['tmp_name'][$ct], $uploadfile)) {
+  //         $mail->addAttachment($uploadfile, $filename);
+  //         $rfile[] = "Файл $filename прикреплён";
+  //     } else {
+  //         $rfile[] = "Не удалось прикрепить файл $filename";
+  //     }
+  //   }
+  // }
+  // Здесь обрабатываются данные из формы  
+  $responseArray = [];  
+  foreach ($_POST as $key => $value) {  
+      $responseArray[$key] = $value; // Правильное добавление элемента в массив  
+  }  
+  // Возвращаем ответ в формате JSON  
+  echo json_encode($responseArray);  
   // Отправка сообщения
   $mail->isHTML(true);
   $mail->Subject = $title;

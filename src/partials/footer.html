@@ -97,32 +97,47 @@
 </footer>
 
 <div style="display: none;" id="hidden">
-    <form action="">
+    <form id="form" class="form1 form-default">
+        <input type="hidden" value="Запись на прием" name="price">
+
         @include('form.html')
+    <div id="response" class="response"></div>
+
     </form>
 </div>
 <div style="display: none;" id="price1">
-    <form action="">
-        <input type="hidden" value="Наращивание ногтей длина 1-2">
+    <form id="form" class="form1 form-default">
+        <input type="hidden" value="Наращивание ногтей (длина 1-2)" name="price">
         @include('form.html')
+        <div id="response" class="response"></div>
+    
     </form>
 </div>
 <div style="display: none;" id="price2">
-    <form action="">
-        <input type="hidden" value="Наращивание ногтей длина 3-7">
+    <form id="form" class="form1 form-default">
+        <input type="hidden" value="Наращивание ногтей (длина 3-7)" name="price">
+
         @include('form.html')
+        <div id="response" class="response"></div>
+    
     </form>
 </div>
 <div style="display: none;" id="price3">
-    <form action="">
-        <input type="hidden" value="Дизайн ногтей">
+    <form id="form" class="form1 form-default">
+        <input type="hidden" value="Маникюр с однотонным покрытием" name="price">
+
         @include('form.html')
+        <div id="response" class="response"></div>
+    
     </form>
 </div>
 <div style="display: none;" id="price4">
-    <form action="">
-        <input type="hidden" value="Маникюр с однотонным покрытием">
+    <form id="form" class="form1 form-default">
+        <input type="hidden" value="Дизайн ногтей" name="price">
+
         @include('form.html')
+        <div id="response" class="response"></div>
+    
     </form>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
