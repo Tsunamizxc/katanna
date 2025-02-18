@@ -23,13 +23,15 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-
+        form.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') {
+                e.preventDefault(); // предотвращаем стандартное поведение (отправку формы)  
+            }
+        });  
         form.addEventListener('submit', function (e) {
             e.preventDefault(); // предотвращаем стандартное поведение формы  
             const closeForm = document.querySelector('.is-close-btn');
-
             console.log('тык')
-
             if (nameInput.value == "") {
                 nameInput.classList.add('active-error');
             } else {
@@ -46,33 +48,30 @@ document.addEventListener("DOMContentLoaded", function () {
                     method: 'POST',
                     body: formData
                 })
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error('Сеть ответила с ошибкой: ' + response.statusText);
-                        }
-                        return response.text(); // преобразуем ответ в текст  
-                    })
-                    .then(data => {
-                        // console.log('Ответ от сервера:', data); // Логируем ответ  
-                        form.reset(); // очистка
-                        closeForm.click(); // закрытие формы
-                        goodAlert.classList.add('acitve-alert');
-                        setTimeout(() => {
-                            goodAlert.classList.remove('acitve-alert');
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Сеть ответила с ошибкой: ' + response.statusText);
+                    }
+                    return response.text(); // преобразуем ответ в текст  
+                })
+                .then(data => {
+                    // console.log('Ответ от сервера:', data); // Логируем ответ  
+                    form.reset(); // очистка
+                    closeForm.click(); // закрытие формы
+                    goodAlert.classList.add('acitve-alert');
+                    setTimeout(() => {
+                        goodAlert.classList.remove('acitve-alert');
 
-                        }, 3000);
-                        const jsonData = JSON.parse(data); // преобразуем строку JSON в объект  
-                        // responseDiv.innerHTML = jsonData.project_name; // выводим сообщение на страницу  
-                        // alert('Форма успешно отправлена!'); // добавляем alert  
-                    })
-                    .catch(error => {
-                        // responseDiv.innerHTML = error.message;
-                        console.log('Ошибка при отправке формы: ' + error.message); // добавляем alert для ошибок  
-                      
-                    });
+                    }, 3000);
+                    const jsonData = JSON.parse(data); // преобразуем строку JSON в объект  
+                    // responseDiv.innerHTML = jsonData.project_name; // выводим сообщение на страницу  
+                    // alert('Форма успешно отправлена!'); // добавляем alert  
+                })
+                .catch(error => {
+                    // responseDiv.innerHTML = error.message;
+                    console.log('Ошибка при отправке формы: ' + error.message); // добавляем alert для ошибок  
+                });
             }
-
         });
     }
-
 });  

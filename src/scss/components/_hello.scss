@@ -23,6 +23,11 @@
         
         &_content {
             max-width: rem(673);
+             @media (max-width: 1024px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
             @media (max-width: 530px) {
                 max-width: rem(457);
                 display: flex;
@@ -77,6 +82,11 @@
             letter-spacing: rem(0);
             text-align: left;
             text-decoration-line: underline;
+             @media (max-width: 1024px) {
+      
+                text-align: center;
+        
+            }
             @media (max-width: 530px) {
                 color: rgb(0, 0, 0);
                 font-family: Montserrat;
@@ -100,6 +110,11 @@
             line-height: 140%;
             letter-spacing: rem(0);
             text-align: left;
+               @media (max-width: 1024px) {
+      
+                text-align: center;
+        
+            }
             @media (max-width: 530px) {
                 color: rgb(0, 0, 0);
                 font-family: Montserrat;
