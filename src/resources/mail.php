@@ -35,10 +35,10 @@ try {
   $mail->SMTPAuth   = true;
 
   // Настройки вашей почты
-  $mail->Host       = 'smtp.timeweb.ru'; // SMTP сервера вашей почты
-  $mail->Username   = 'info@katanna-nails.ru'; // Логин на почте
-  $mail->Password   = '1F970r4Yl'; // Пароль на почте
-  $mail->SMTPSecure = 'ssl';
+  $mail->Host       = ''; // SMTP сервера вашей почты
+  $mail->Username   = ''; // Логин на почте
+  $mail->Password   = ''; // Пароль на почте
+  $mail->SMTPSecure = '';
   $mail->Port       = 465;
 
   $mail->setFrom('info@katanna-nails.ru', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
